@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: ccart_production
   username: ccart
   password: <%= ENV["CCART_DATABASE_PASSWORD"] %>
