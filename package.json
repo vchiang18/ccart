@@ -9,5 +9,8 @@
     "esbuild": "^0.20.1",
     "sass": "^1.71.1",
     "stimulus": "^3.2.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }

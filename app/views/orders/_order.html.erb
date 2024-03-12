@@ -1,0 +1,92 @@
+<div id="<%= dom_id order %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Rails:</strong>
+    <%= order.rails %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Generate:</strong>
+    <%= order.generate %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Scaffold:</strong>
+    <%= order.scaffold %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Order:</strong>
+    <%= order.Order %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Item:</strong>
+    <%= order.item_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Brand:</strong>
+    <%= order.brand_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Unit quantity:</strong>
+    <%= order.unit_quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Unit type:</strong>
+    <%= order.unit_type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Vendor:</strong>
+    <%= order.vendor_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Requestor:</strong>
+    <%= order.requestor_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Status:</strong>
+    <%= order.status %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Quantity:</strong>
+    <%= order.quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Purchased price:</strong>
+    <%= order.purchased_price %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Purchased quantity:</strong>
+    <%= order.purchased_quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= order.notes %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Last edited by:</strong>
+    <%= order.last_edited_by_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Last edited:</strong>
+    <%= order.last_edited %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this order", order, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this order", edit_order_path(order), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

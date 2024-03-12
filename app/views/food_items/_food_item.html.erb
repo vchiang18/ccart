@@ -1,0 +1,37 @@
+<div id="<%= dom_id food_item %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Item name:</strong>
+    <%= food_item.item_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Brand:</strong>
+    <%= food_item.brand_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Vendor:</strong>
+    <%= food_item.vendor_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Unit type:</strong>
+    <%= food_item.unit_type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Unit quantity:</strong>
+    <%= food_item.unit_quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Price:</strong>
+    <%= food_item.price %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this food item", food_item, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this food item", edit_food_item_path(food_item), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

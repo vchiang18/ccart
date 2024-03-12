@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rails: MyString
+  generate: MyString
+  scaffold: MyString
+  Order: MyString
+  item: one
+  brand: one
+  unit_quantity: 1
+  unit_type: MyString
+  vendor: one
+  requestor: one
+  status: MyString
+  quantity: 1
+  purchased_price: 1
+  purchased_quantity: 1
+  notes: MyText
+  last_edited_by: one
+  last_edited: 2024-03-12 11:35:04
+
+two:
+  rails: MyString
+  generate: MyString
+  scaffold: MyString
+  Order: MyString
+  item: two
+  brand: two
+  unit_quantity: 1
+  unit_type: MyString
+  vendor: two
+  requestor: two
+  status: MyString
+  quantity: 1
+  purchased_price: 1
+  purchased_quantity: 1
+  notes: MyText
+  last_edited_by: two
+  last_edited: 2024-03-12 11:35:04

@@ -1,0 +1,12 @@
+<div class="max-w-md mx-auto">
+  <% if user_signed_in? %>
+    <p class="text-lg mb-4">Hello, <%= current_user.email %></p>
+    <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to new_user_registration_path, class: "text-blue-500 hover:underline" do %>
+      Sign up
+    <% end %>
+  <% end %>
+
+  <h1 class="text-3xl font-bold underline mt-8">Hello world!</h1>
+</div>
